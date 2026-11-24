@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+int gb, mb, kb;
+
+printf("Insira quantos Gigabytes você deseja converter: ");
+scanf("%d", &gb);
+
+mb = gb * 1024;
+kb = mb * 1024;
+
+printf("\n O total de megabytes são: %d\n", mb);
+printf("\n O total de kilobytes são: %d\n", kb);
+
+
+    return 0;
+}
