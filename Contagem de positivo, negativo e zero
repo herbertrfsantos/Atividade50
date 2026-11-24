@@ -1,0 +1,24 @@
+int main(int argc, char *argv[]) {
+	int qtdAlunos, i;
+    float nota, somaNotas = 0.0, media;
+
+    printf("Digite a quantidade de alunos na turma: ");
+    scanf("%d", &qtdAlunos);
+
+    if (qtdAlunos <= 0) {
+        printf("Quantidade invalida de alunos!\n");
+    } else {
+
+        for (i = 1; i <= qtdAlunos; i++) {
+            printf("Digite a nota do aluno %d: ", i);
+            scanf("%f", &nota);
+
+            somaNotas += nota;
+    	}
+        media = somaNotas / qtdAlunos;
+
+        printf("\n--- Resultado Final ---\n");
+        printf("A media geral da turma e: %.2f\n", media);
+    }
+	return 0;
+}
