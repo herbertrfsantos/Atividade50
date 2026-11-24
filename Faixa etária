@@ -1,0 +1,21 @@
+int main(int argc, char *argv[]) {
+	int idade;
+	printf("====Digite um numero pra sabermos sua idade====\n");
+	 printf("Digite a sua idade: ");
+	 scanf("%d", &idade);
+	 
+	 if(idade < 0){
+	 	printf("Idade invalida!\n");
+	 } else if (idade <= 12){
+	 	printf("Idade crianca!\n");
+	 	 }else if (idade <= 17){
+	 	 	printf("Idade adolecente!\n");
+		  }else if (idade <= 59){
+	 	 		printf("Idade adulto!\n");
+			  }else{
+			  	printf("Idade idoso\n");
+			  }
+	 	 		
+		  
+	return 0;
+}
