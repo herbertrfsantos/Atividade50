@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int codigos[10];
+    int codigoBusca;
+    int indiceEncontrado = -1;
+
+    // Leitura dos 10 códigos numéricos
+    for (int i = 0; i < 10; i++) {
+        printf("Digite o %do codigo numerico: ", i + 1);
+        scanf("%d", &codigos[i]);
+    }
+
+    printf("\nDigite o codigo que deseja buscar: ");
+    scanf("%d", &codigoBusca);
+
+    // Busca sequencial pela primeira ocorrência
+    for (int i = 0; i < 10; i++) {
+        if (codigos[i] == codigoBusca) {
+            indiceEncontrado = i;
+            break; // Para o ciclo assim que encontra a primeira ocorrência
+        }
+    }
+
+    if (indiceEncontrado != -1) {
+        printf("Codigo %d encontrado no indice %d (posicao %d).\n", codigoBusca, indiceEncontrado, indiceEncontrado + 1);
+    } else {
+        printf("Codigo %d nao encontrado no vetor.\n", codigoBusca);
+    }
+
+    return 0;
+}
