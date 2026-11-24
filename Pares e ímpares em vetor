@@ -1,0 +1,28 @@
+int main(int argc, char *argv[]) {
+	    int numeros[10];
+    int i, qtdPares = 0, qtdImpares = 0;
+
+    for (i = 0; i < 10; i++) {
+        printf("Digite o %do numero: ", i + 1);
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("\nNumeros pares: ");
+    for (i = 0; i < 10; i++) {
+        if (numeros[i] % 2 == 0) {
+            printf("%d ", numeros[i]);
+            qtdPares++;
+        }
+    }
+    printf("\nTotal de pares: %d\n", qtdPares);
+
+    printf("\nNumeros impares: ");
+    for (i = 0; i < 10; i++) {
+        if (numeros[i] % 2 != 0) {
+            printf("%d ", numeros[i]);
+            qtdImpares++;
+        }
+    }
+    printf("\nTotal de impares: %d\n", qtdImpares);
+	return 0;
+}
