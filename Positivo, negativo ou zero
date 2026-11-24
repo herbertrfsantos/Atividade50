@@ -1,0 +1,19 @@
+int main(int argc, char *argv[]) {
+	    int num;
+
+    
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+
+    
+   if (num > 0) {
+        printf("Positivo.\n", num);
+    } 
+    else if (num < 0) {
+        printf("Negativo.\n", num);
+    } 
+    else {
+        printf("igual a Zero.\n", num);
+    }
+	return 0;
+}
