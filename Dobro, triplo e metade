@@ -1,0 +1,16 @@
+int main(int argc, char *argv[]) {
+	
+	float num, dub, trip, meta;
+	
+	printf("Digite um numero: ");
+	scanf("%f", &num);
+	
+	dub = num * 2;
+	trip = num * 3;
+	meta = num / 2;
+	
+	printf("Dobro: %.2f\n", dub);
+	printf("triplo: %.2f\n", trip);
+	printf("Metade: %.2f\n", meta);
+	return 0;
+}
