@@ -1,0 +1,12 @@
+int main(int argc, char *argv[]) {
+		  float celsius, fahrenheit;
+
+   
+    printf("Digite a temperatura em Celsius: \n");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+
+    printf("%.1f graus Celsius equivalem. \n%.1fgraus Fahrenheit.\n", celsius, fahrenheit);
+	return 0;
+}
