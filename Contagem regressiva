@@ -1,0 +1,19 @@
+int main(int argc, char *argv[]) {
+	int N, i;
+	
+	printf("digite um numero inteiro positivo (N): ");
+	scanf("%d", &N);
+	
+	if (N < 0) {
+        printf("Por favor, digite um numero maior ou igual a zero.\n");
+    } else {
+        printf("Contagem regressiva de %d ate 0:\n", N);
+        
+        for (i = N; i >= 0; i--) {
+            printf("%d ", i);
+        }
+        
+        printf("\nFim da contagem!\n");
+    }
+	return 0;
+}
