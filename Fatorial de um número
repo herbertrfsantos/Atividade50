@@ -1,0 +1,21 @@
+int main(int argc, char *argv[]) {
+	int N, i;
+    int soma = 0;
+
+    printf("Digite um numero inteiro positivo (N): ");
+    scanf("%d", &N);
+
+    if (N <= 0) {
+        printf("Por favor, digite um numero maior que zero.\n");
+    } else {
+    	
+        for (i = 1; i <= N; i++) {
+        	
+            if (i % 2 == 0) {
+                soma += i;
+            }
+        }
+        printf("A soma de todos os numeros pares entre 1 e %d e: %d\n", N, soma);
+    }
+	return 0;
+}
