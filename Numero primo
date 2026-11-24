@@ -1,0 +1,36 @@
+int main(int argc, char *argv[]) {
+	int n, i;
+    int num, maior, menor;
+
+    printf("Digite a quantidade de numeros (N): ");
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        printf("A quantidade deve ser maior que zero.\n");
+        return 0;
+    }
+
+    printf("Digite o 1o numero: ");
+    scanf("%d", &num);
+
+    maior = num;
+    menor = num;
+
+    for (i = 2; i <= n; i++) {
+        printf("Digite o %do numero: ", i);
+        scanf("%d", &num);
+
+        if (num > maior) {
+            maior = num;
+        }
+
+        if (num < menor) {
+            menor = num;
+        }
+    }
+
+    printf("\nMaior valor encontrado: %d\n", maior);
+    printf("Menor valor encontrado: %d\n", menor);
+    
+	return 0;
+}
