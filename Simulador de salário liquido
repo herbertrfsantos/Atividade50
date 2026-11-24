@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+float salario, desconto1, desconto2, valordesc1, valordesc2, salarioli;
+
+printf("Insira o seu salário bruto: ");
+scanf("%f", &salario);
+
+printf("Insira o primeiro desconto: ");
+scanf("%f", &desconto1);
+
+printf("Insira o segundo desconto: ");
+scanf("%f", &desconto2);
+
+valordesc1 = salario * desconto1/100;
+valordesc2 = salario * desconto2/100;
+
+printf("\nO valor do primeiro desconto: %.2f\n", valordesc1);
+printf("\nO valor do segundo desconto: %.2f\n", valordesc2);
+
+salarioli = salario - valordesc1 - valordesc2;
+
+printf("\nO seu salário líquido: %.2f\n", salarioli);
+
+    return 0;
+}
