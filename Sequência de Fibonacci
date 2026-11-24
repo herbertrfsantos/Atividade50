@@ -1,0 +1,15 @@
+int main(int argc, char *argv[]) {
+	float nota;
+
+    printf("Digite uma nota entre 0 e 10: ");
+    scanf("%f", &nota);
+
+    while (nota < 0 || nota > 10) {
+        printf("Valor invalido! A nota deve ser entre 0 e 10.\n");
+        printf("Digite novamente: ");
+        scanf("%f", &nota);
+    }
+    
+    printf("\nNota %.1f registrada com sucesso!\n", nota);
+	return 0;
+}
